@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Dima",
+        "surname": "Naumov",
+        "email": "dima@mail.ru",
+        "phoneNumber": "89999242088",
+        "dateOfBirth": "1997-08-04"
+    },
+    {
+        "name": "Ivan",
+        "surname": "Ivanov",
+        "email": "usha12kov@mai;.ru",
+        "phoneNumber": "89999242089",
+        "dateOfBirth": "1999-09-04"
+    }
+]
