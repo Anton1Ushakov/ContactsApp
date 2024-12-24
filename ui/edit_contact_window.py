@@ -14,7 +14,6 @@ class EditContactWindow:
         self.window.title("Edit Contact")
         self.window.geometry("400x450")  # Increased height for new field
 
-
         contact = self.contact_service.get_contacts()[contact_index]
 
         tk.Label(self.window, text="Name:").grid(row=0, column=0, sticky="w", padx=10, pady=5)
@@ -66,7 +65,7 @@ class EditContactWindow:
             "vk_id": self.vk_id_entry.get(),  # VK ID remains optional
         }
 
-        # Check for empty fields (add these checks)
+        # Check for empty fields
         if not updated_contact["name"]:
             errors.append("Name is required.")
         if not updated_contact["surname"]:
@@ -84,7 +83,7 @@ class EditContactWindow:
 
         # Validate phone number
         if updated_contact["phoneNumber"] and not self.is_valid_phone(updated_contact["phoneNumber"]):
-            errors.append("Invalid phone number. Please enter a valid phone number.")
+            errors.append("Invalid phone number. It must start with 7 and contain 11 digits.")
 
         # Validate date of birth
         if updated_contact["dateOfBirth"] and not self.is_valid_date(updated_contact["dateOfBirth"]):
@@ -114,7 +113,7 @@ class EditContactWindow:
         return re.match(email_regex, email) is not None
 
     def is_valid_phone(self, phone):
-        phone_regex = r"^\+?\d{10,15}$"
+        phone_regex = r"^7\d{10}$"  # Phone must start with 7 and contain exactly 11 digits
         return re.match(phone_regex, phone) is not None
 
     def is_valid_date(self, date_str):

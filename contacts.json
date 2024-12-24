@@ -19,14 +19,6 @@
         "name": "Valentin",
         "surname": "Ivanov",
         "email": "fds@mail.ru",
-        "phoneNumber": "89999242088",
-        "dateOfBirth": "2024-12-24",
-        "vk_id": ""
-    },
-    {
-        "name": "Maria",
-        "surname": "Uhsakova",
-        "email": "122@mail.ru",
         "phoneNumber": "79999242088",
         "dateOfBirth": "2024-12-24",
         "vk_id": ""

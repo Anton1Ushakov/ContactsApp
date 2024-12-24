@@ -14,7 +14,6 @@ class AddContactWindow:
         self.window.title("Add Contact")
         self.window.geometry("400x350")
 
-
         tk.Label(self.window, text="Name:").grid(row=0, column=0, sticky="w", padx=10, pady=5)
         self.name_entry = tk.Entry(self.window)
         self.name_entry.grid(row=0, column=1, padx=10, pady=5)
@@ -50,7 +49,7 @@ class AddContactWindow:
         return re.match(pattern, email) is not None
 
     def validate_phone(self, phone):
-        pattern = r"^\+?\d{10,15}$"
+        pattern = r"^7\d{10}$"  # Номер должен начинаться с 7 и состоять из 11 цифр
         return re.match(pattern, phone) is not None
 
     def validate_date(self, date_str):
@@ -78,7 +77,7 @@ class AddContactWindow:
         if not phone:
             errors.append("Phone number is required.")
         elif not self.validate_phone(phone):
-            errors.append("Invalid phone number format.")
+            errors.append("Phone number must start with 7 and contain 11 digits.")
 
         dob = self.dob_entry.get()
         if not dob:

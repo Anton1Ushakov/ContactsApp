@@ -168,6 +168,12 @@ class MainWindow:
         if len(self.contact_list.curselection()) == 0:
             messagebox.showwarning("Warning", "Please select a contact to delete.")
             return
+
+        # Confirmation dialog
+        confirm = messagebox.askyesno("Confirm Deletion", "Are you sure you want to delete this contact?")
+        if not confirm:
+            return
+
         index = self.contact_list.curselection()[0]
         self.contact_service.delete_contact(index)
         self.update_contact_list()
