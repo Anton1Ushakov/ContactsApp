@@ -211,7 +211,7 @@ class MainWindow:
         github_label = tk.Label(content_frame, text="GitHub: github.com/antonushakov", font=("Arial", 12), fg="blue",
                                 cursor="hand2", anchor="w", justify="left")
         github_label.pack(anchor="w", pady=2)
-        github_label.bind("<Button-1>", lambda e: self.open_url("https://github.com/antonushakov"))
+        github_label.bind("<Button-1>", lambda e: self.open_url("https://github.com/Anton1Ushakov"))
 
         # Footer placeholder at the bottom
         footer_frame = tk.Frame(content_frame)
