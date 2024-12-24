@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Женя",
+        "surname": "Иванов",
+        "email": "a@b.ru",
+        "phoneNumber": "79123456789",
+        "dateOfBirth": "2000-12-11"
+    },
+    {
+        "name": "Толя",
+        "surname": "Иванов",
+        "email": "a@b.ru",
+        "phoneNumber": "79123456789",
+        "dateOfBirth": "2000-12-11"
+    },
+    {
+        "name": "Гена",
+        "surname": "Иванов",
+        "email": "a@b.ru",
+        "phoneNumber": "79123456789",
+        "dateOfBirth": "2000-12-11"
+    }
+
+]
