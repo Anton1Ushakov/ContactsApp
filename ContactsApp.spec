@@ -5,7 +5,7 @@ a = Analysis(
     ['ContactsApp.py'],
     pathex=[],
     binaries=[],
-    datas=[],
+    datas=[('C:\\Users\\79999\\PycharmProjects\\PythonProject1\\dist\\contacts.json', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
